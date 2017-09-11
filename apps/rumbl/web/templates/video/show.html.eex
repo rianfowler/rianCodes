@@ -1,0 +1,28 @@
+<h2>Show videos</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @videos.user_id %>
+  </li>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @videos.url %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @videos.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @videos.description %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: video_path(@conn, :edit, @videos) %>
+<%= link "Back", to: video_path(@conn, :index) %>
