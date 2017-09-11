@@ -31,7 +31,7 @@ end
 # will be used by default
 
 release :riancodes do
-  set version: current_version(:riancodes)
+  set version: "0.1.0"
   set applications: [:info_sys, :rumbl]
 end
 
